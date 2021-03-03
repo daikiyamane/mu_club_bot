@@ -17,7 +17,13 @@ def make_accounts():
 
 
 def make_tweets(accounts, count, page):
-    return [api.user_timeline(accounts[i], count=count, page=page) for i in range(len(accounts))]
+    l = []
+    for i in range(len(accounts)):
+        try:
+            l.append(api.user_timeline(accounts[i], count=count, page=page))
+        except tweepy.TweepError:
+            print("userが存在しません")
+    return l
 
 
 def retweet_favorite():
