@@ -55,4 +55,17 @@ def retweet_favorite():
                 print("すでにいいねしてます")
 
 
+def q_favo(q_list, count):
+    for q in q_list:
+        print("「{}」を含むツイートを{}件いいねしています。".format(q, count))
+        search_results = api.search(q=q, count=count)
+        for status in search_results:
+            tweet_id = status.id
+            try:
+                api.create_favorite(tweet_id)
+            except tweepy.TweepError:
+                print("すでにいいねしてます")
+
+
 retweet_favorite()
+q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
