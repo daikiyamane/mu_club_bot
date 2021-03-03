@@ -12,7 +12,7 @@ api = tweepy.API(auth)
 
 
 def make_accounts():
-    accounts = ["YNe19999"]
+    accounts = ["YNe1999"]
     return accounts
 
 
@@ -28,7 +28,7 @@ def make_tweets(accounts, count, page):
 
 def retweet_favorite():
     accounts = make_accounts()
-    tweets = make_tweets(accounts, 5, 1)
+    tweets = make_tweets(accounts, 10, 1)
     for tweet in tweets:
         for t in tweet:
             try:
