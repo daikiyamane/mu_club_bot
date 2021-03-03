@@ -12,8 +12,7 @@ api = tweepy.API(auth)
 
 
 def make_accounts():
-    accounts = ["Matsudai_koho", "MU_Career",
-                "MU_COOP", "MU_Renkei", "MU_Internation"]
+    accounts = ["YNe19999"]
     return accounts
 
 
