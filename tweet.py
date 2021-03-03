@@ -12,7 +12,21 @@ api = tweepy.API(auth)
 
 
 def make_accounts():
-    accounts = ["YNe1999"]
+    accounts = [
+        "zemichan5", "xPNlCqAD93FFtUL", "wTVgZex2gX4RH8W", "sourinkai", "soccermatsudai", "snkn45th", "shogimatsudai", "prpr_MATSUYAMA", "otokojuku_matsu", "nigitatsusai", "mukeiken", "mubc_1977", "mubaseball_89", "mu_jazz_agents", "mu_LINK2014", "msgurume", "miyoshinishioka", "matudi_spochan", "matudaiguitar", "matudaiBC", "matsuyamawlax",
+        "matsuyamaglee", "matsuyama_ussb4", "matsuyama_q", "matsuyama_lax",
+        "matsuyama_cheer", "matsuwushu", "matsudaivys", "matsudaiski", "matsudaikyudo",
+        "matsudaikarate", "matsudai_tf", "matsudai_syodo", "matsudai_src",
+        "matsudai_rugby", "matsudai_rowing", "matsudai_manken", "matsudai_ld",
+        "matsudai_horse", "matsudai_futsal", "matsudai_folk", "matsudai_bungei",
+        "matsudai_PIER", "matsudai_CoD", "matsudaiBBS", "matsudai65yacht", "matsu_hou",
+        "majidaibadoai", "m_sadou_", "karate98764", "ess20962134", "eSportsPCr6s",
+        "eSportsAPEX1", "eSports79557391", "eSports45225071", "bMLCuWcO97B2aeF",
+        "aidaimatsudai", "a1k1d0_m", "SymphonicWinds", "Popmtsuyama", "Mu_R89",
+        "Matudai_achery", "MatsuyamaUKendo", "Matsudaisabage", "MatsudaieBASEBA",
+        "Matsudai_CAFE", "MatsudaiOchiken", "Ma_VBT", "MUSC__official", "MTACT1",
+        "MMD_dance", "La_soiree_", "Hawaiian_m508", "BA_matsuyamauni", "AIgaookii_gym",
+        "8LjpnZSocbp7Xvp"]
     return accounts
 
 
@@ -28,7 +42,7 @@ def make_tweets(accounts, count, page):
 
 def retweet_favorite():
     accounts = make_accounts()
-    tweets = make_tweets(accounts, 10, 1)
+    tweets = make_tweets(accounts, 1, 1)
     for tweet in tweets:
         for t in tweet:
             try:
