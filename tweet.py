@@ -70,8 +70,9 @@ def q_favo(q_list, count):
 
 def tweet():
     dt_now = datetime.datetime.now()
-    str_dt_now = dt_now.strftime("%Y年%m月%d日 %H:%M%S")
-    message = str("ほぼ全ての松山大学の部活・サークルのアカウントをまとめました！！\n是非フォローから覗いてみて下さい\nまだフォローされてない、新しく設立したという方はフォロー、メッセージ下さい。\ntweet: {}\n#春から松大 #春から松山大学 #松山大学 #松大".format(str_dt_now))
+    str_dt_now = dt_now.strftime("%Y年%m月%d日 %H:%M")
+    message = str("松山大学の部活・サークルのアカウントをまとめました！\n是非フォローから覗いてみて下さい{}\nこのbotはフォローしている部活やサークルの投稿をリツイートします。\nフォローしていただけると随時追加していきます{}{}\ntweet: {}\n#春から松大 #春から松山大学 #松山大学".format(
+        chr(int(0x1f601)), chr(int(0x1f647)), chr(int(0x1f647)), str_dt_now))
     api.update_status(message)
 
 
