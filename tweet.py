@@ -2,6 +2,7 @@
 
 import os
 import tweepy
+import datetime
 
 auth = tweepy.OAuthHandler(
     os.environ["CONSUMER_KEY"], os.environ["CONSUMER_SECRET"])
@@ -67,5 +68,13 @@ def q_favo(q_list, count):
                 print("すでにいいねしてます")
 
 
+def tweet():
+    dt_now = datetime.datetime.now()
+    str_dt_now = dt_now.strftime("%Y年%m月%d日 %H:%M%S")
+    message = str("ほぼ全ての松山大学の部活・サークルのアカウントをまとめました！！\n是非フォローから覗いてみて下さい\nまだフォローされてない、新しく設立したという方はフォロー、メッセージ下さい。\ntweet: {}\n#春から松大 #春から松山大学 #松山大学 #松大".format(str_dt_now))
+    api.update_status(message)
+
+
 retweet_favorite()
 q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
+tweet()
