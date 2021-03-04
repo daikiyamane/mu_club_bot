@@ -27,7 +27,7 @@ def make_accounts():
         "Matudai_achery", "MatsuyamaUKendo", "Matsudaisabage", "MatsudaieBASEBA",
         "Matsudai_CAFE", "MatsudaiOchiken", "Ma_VBT", "MUSC__official", "MTACT1",
         "MMD_dance", "La_soiree_", "Hawaiian_m508", "BA_matsuyamauni", "AIgaookii_gym",
-        "8LjpnZSocbp7Xvp"]
+        "8LjpnZSocbp7Xvp", "houken_matsudai", "sdcmacl"]
     return accounts
 
 
