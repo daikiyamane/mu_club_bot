@@ -27,7 +27,8 @@ def make_accounts():
         "Matudai_achery", "MatsuyamaUKendo", "Matsudaisabage", "MatsudaieBASEBA",
         "Matsudai_CAFE", "MatsudaiOchiken", "Ma_VBT", "MUSC__official", "MTACT1",
         "MMD_dance", "La_soiree_", "Hawaiian_m508", "BA_matsuyamauni", "AIgaookii_gym",
-        "8LjpnZSocbp7Xvp", "houken_matsudai", "sdcmacl"]
+        "8LjpnZSocbp7Xvp", "houken_matsudai", "sdcmacl", "kodomocollege", "matsudaienbu", "MUSE_matsuyama", "DUNK373408592", "univola_4Rings"
+    ]
     return accounts
 
 
@@ -78,4 +79,6 @@ def tweet():
 
 retweet_favorite()
 q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
-tweet()
+if datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() >= datetime.time(12, 0):
+
+    tweet()
