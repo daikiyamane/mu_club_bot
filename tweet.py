@@ -80,5 +80,4 @@ def tweet():
 retweet_favorite()
 q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
 if datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() >= datetime.time(12, 0):
-
     tweet()
