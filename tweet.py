@@ -27,7 +27,7 @@ def make_accounts():
         "Matudai_achery", "MatsuyamaUKendo", "Matsudaisabage", "MatsudaieBASEBA",
         "Matsudai_CAFE", "MatsudaiOchiken", "Ma_VBT", "MUSC__official", "MTACT1",
         "MMD_dance", "La_soiree_", "Hawaiian_m508", "BA_matsuyamauni", "AIgaookii_gym",
-        "8LjpnZSocbp7Xvp", "houken_matsudai", "sdcmacl", "kodomocollege", "matsudaienbu", "MUSE_matsuyama", "DUNK373408592", "univola_4Rings"
+        "8LjpnZSocbp7Xvp", "houken_matsudai", "sdcmacl", "kodomocollege", "matsudaienbu", "MUSE_matsuyama", "DUNK373408592", "univola_4Rings", "matsudaieiga"
     ]
     return accounts
 
@@ -76,8 +76,12 @@ def tweet():
         chr(int(0x1f601)), chr(int(0x1f647)), chr(int(0x1f647)), str_dt_now))
     api.update_status(message)
 
+    message2 = str(
+        "部活動・サークルを運営している方で毎日決まった投稿をしたい方、毎日投稿するのが面倒だなと感じている方、それ自動化しませんか？\nもし興味がありましたらぜひDMください！！\ntweet: {}\n#春から松大 #春から松山大学 #松山大学".format(str_dt_now))
+    api.update_status(message2)
+
 
 retweet_favorite()
 q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
-if datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() >= datetime.time(12, 0):
+if datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(12, 0):
     tweet()
