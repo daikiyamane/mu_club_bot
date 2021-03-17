@@ -83,5 +83,13 @@ def tweet():
 
 retweet_favorite()
 q_favo(["#春から松大", "#春から松山大学", "#松山大学"], 100)
-if datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(12, 0):
+if datetime.time(8, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(9, 0):
+    tweet()
+elif datetime.time(11, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(12, 0):
+    tweet()
+elif datetime.time(16, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(17, 0):
+    tweet()
+elif datetime.time(19, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(20, 0):
+    tweet()
+elif datetime.time(22, 00) <= datetime.datetime.now().time() and datetime.datetime.now().time() <= datetime.time(23, 0):
     tweet()
