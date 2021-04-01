@@ -78,3 +78,5 @@ MUSE_matsuyama
 DUNK373408592
 univola_4Rings
 matsudaieiga
+aiki_fukudai
+study42_ehimes
