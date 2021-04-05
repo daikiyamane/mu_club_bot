@@ -66,7 +66,7 @@ def tweet():
     api.update_status(message)
 
     message2 = str(
-        "部活動・サークルを運営している方で毎日決まった投稿をしたい方、毎日投稿するのが面倒だなと感じている方、それ自動化しませんか？\nもし興味がありましたらぜひDMください！！\ntweet: {}\n#春から松大 #春から松山大学 #松山大学".format(str_dt_now))
+        "・毎日決まった投稿をしたい方\n・「＃春から松山大学」などのハッシュタグを含んだツイートをリツイートいいねしたい方\nそれ自動化しませんか？\n興味がある方はDMください！！\ntweet: {}\n#春から松大 #春から松山大学 #松山大学".format(str_dt_now))
     api.update_status(message2)
 
 
