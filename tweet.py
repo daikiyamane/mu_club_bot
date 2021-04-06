@@ -11,6 +11,8 @@ auth.set_access_token(
 
 api = tweepy.API(auth)
 
+# フォローしているアカウントをリストで返す
+
 
 def make_accounts():
     text_file = open("ac.txt", "r")
@@ -19,6 +21,8 @@ def make_accounts():
     text_file.close()
     print(accounts)
     return accounts
+
+# フォローしているアカウントのツイートを集める
 
 
 def make_tweets(accounts, count, page):
@@ -29,6 +33,8 @@ def make_tweets(accounts, count, page):
         except tweepy.TweepError:
             print("userが存在しません")
     return l
+
+# フォローしているアカウントのツイートを随時リツイート&いいねする
 
 
 def retweet_favorite():
@@ -45,6 +51,8 @@ def retweet_favorite():
             except tweepy.TweepError:
                 print("すでにいいねしてます")
 
+# 任意のハッシュタグを含むツイートをいいね
+
 
 def q_favo(q_list, count):
     for q in q_list:
@@ -56,6 +64,8 @@ def q_favo(q_list, count):
                 api.create_favorite(tweet_id)
             except tweepy.TweepError:
                 print("すでにいいねしてます")
+
+# 任意のメッセージをツイート
 
 
 def tweet():
