@@ -65,7 +65,7 @@ def q_favo(q_list, count):
             except tweepy.TweepError:
                 print("すでにいいねしてます")
 
-# 任意のメッセージをツイート
+# 任意のメッセージをツイートする
 
 
 def tweet():
