@@ -1,4 +1,5 @@
 # mu_club_bot
+Account -> ![@mu_activities](https://twitter.com/mu_activities)
 
 ## 概要
 松山大学のクラブ・サークルのTwitterアカウントをフォローしつぶやきをリツートして拡散します。
