@@ -39,7 +39,7 @@ def make_tweets(accounts, count, page):
 
 def retweet_favorite():
     accounts = make_accounts()
-    tweets = make_tweets(accounts, 1, 1)
+    tweets = make_tweets(accounts, 3, 1)
     for tweet in tweets:
         for t in tweet:
             try:
